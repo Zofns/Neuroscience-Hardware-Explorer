@@ -257,7 +257,19 @@
                 specs: { setup: 9, quality: 8, mobility: 9, price: 2, comfort: 7 }, // 1-10 scale
                 manualUrl: 'https://wearablesensing.com/products/dsi-24/',
                 features: ['Dry Sensors (No Gel)', 'Wireless (Bluetooth)', 'VR Ready', 'Active Shielding'],
-                fact: 'DSI-24는 젤 없이도 의료 등급의 신호를 얻을 수 있어, 피험자의 편의가 중요한 연구에 최적입니다.'
+                fact: 'DSI-24는 젤 없이도 의료 등급의 신호를 얻을 수 있어, 피험자의 편의가 중요한 연구에 최적입니다.',
+                manualSummary: `
+<h4 class="font-bold text-slate-800 mt-2 mb-1">🛠️ 기본 셋업 및 사용 방법</h4>
+<ul class="list-disc pl-5 mb-4 text-slate-600">
+    <li>전도성 젤 없이 건식 핀(Pin) 센서를 사용하므로 셋업이 매우 빠릅니다.</li>
+    <li>피험자의 머리에 씌운 후, 각 센서를 가볍게 좌우로 흔들어 머리카락을 헤치고 두피에 직접 닿도록 조정합니다.</li>
+    <li>전용 소프트웨어(DSI-Streamer 등)를 블루투스로 연결하여 실시간 신호 품질을 확인합니다.</li>
+</ul>
+<h4 class="font-bold text-slate-800 mb-1">⚠️ 사용 시 주의사항</h4>
+<ul class="list-disc pl-5 text-slate-600">
+    <li>건식 센서 특성상 피험자가 이를 악물거나 고개를 크게 움직이면 근전도(EMG) 노이즈가 크게 유입될 수 있습니다.</li>
+    <li>사용 후 센서 핀이 휘어지지 않도록 주의하며, 알코올 스왑으로 가볍게 소독하여 보관하세요.</li>
+</ul>`
             },
             {
                 id: 'starstim8',
@@ -270,7 +282,19 @@
                 specs: { setup: 6, quality: 8, mobility: 8, price: 3, comfort: 8 },
                 manualUrl: 'https://www.neuroelectrics.com/products/starstim/starstim-8',
                 features: ['Simultaneous EEG & Stimulation', 'Wireless', 'Cloud Analysis', 'Programmable Protocol'],
-                fact: '자극과 측정을 동시에 수행할 수 있는 유일한 무선 솔루션 중 하나입니다.'
+                fact: '자극과 측정을 동시에 수행할 수 있는 유일한 무선 솔루션 중 하나입니다.',
+                manualSummary: `
+<h4 class="font-bold text-slate-800 mt-2 mb-1">🛠️ 기본 셋업 및 사용 방법</h4>
+<ul class="list-disc pl-5 mb-4 text-slate-600">
+    <li>동봉된 스펀지 전극을 식염수(Saline)에 충분히 적신 후 캡의 지정된 위치에 결합합니다.</li>
+    <li>무선 송신기를 캡에 부착하고 NIC 소프트웨어와 연결합니다.</li>
+    <li>소프트웨어에서 자극 프로토콜(전류 강도, 시간, 파형)과 측정 몽타주를 설정합니다.</li>
+</ul>
+<h4 class="font-bold text-slate-800 mb-1">⚠️ 사용 시 주의사항</h4>
+<ul class="list-disc pl-5 text-slate-600">
+    <li><strong>안전 필수:</strong> 자극을 시작하기 전, 소프트웨어에서 각 전극의 임피던스가 안전 범위 내인지 반드시 확인해야 합니다. 임피던스가 높으면 피부 화상의 위험이 있습니다.</li>
+    <li>자극 중 피험자가 찌르는 듯한 통증을 호소하면 즉시 중단하고 스펀지의 습기를 다시 확인하세요.</li>
+</ul>`
             },
             {
                 id: 'biosemi',
@@ -282,8 +306,21 @@
                 desc: '뇌파 연구의 "Gold Standard"로 불립니다. Active Electrode 기술을 사용하여 임피던스 체크가 필요 없으며, 배터리 구동으로 노이즈가 매우 적습니다. 주로 고정된 실험실 환경에서 사용합니다.',
                 specs: { setup: 3, quality: 10, mobility: 2, price: 2, comfort: 5 },
                 manualUrl: 'https://www.biosemi.com/products.htm',
-                features: ['Active Electrodes', 'Battery Powered (Optical Fiber)', 'DC Amplifier', 'High Channel Count (up to 256)'],
-                fact: '전원 노이즈를 원천 차단하기 위해 광섬유와 배터리를 사용하는 것이 특징입니다.'
+                features: ['Active Electrodes', 'Battery Powered', 'DC Amplifier', 'High Channel Count (up to 256)'],
+                fact: '전원 노이즈를 원천 차단하기 위해 광섬유와 배터리를 사용하는 것이 특징입니다.',
+                manualSummary: `
+<h4 class="font-bold text-slate-800 mt-2 mb-1">🛠️ 기본 셋업 및 사용 방법</h4>
+<ul class="list-disc pl-5 mb-4 text-slate-600">
+    <li>피험자에게 알맞은 사이즈의 헤드캡을 씌우고 턱끈을 고정합니다.</li>
+    <li>주사기를 이용해 각 전극 홀더 구멍에 전도성 젤(Signa Gel 등)을 주입한 뒤, Active 전극을 꽂아 넣습니다.</li>
+    <li>광섬유 케이블과 배터리 박스를 연결하여 시스템 전원을 켭니다. (Biosemi는 전통적인 임피던스 대신 Offset 값을 확인합니다.)</li>
+</ul>
+<h4 class="font-bold text-slate-800 mb-1">⚠️ 사용 시 주의사항</h4>
+<ul class="list-disc pl-5 text-slate-600">
+    <li>배터리 구동 장비이므로 실험 전 배터리 충전 상태를 반드시 확인하세요.</li>
+    <li>전도성 젤을 너무 많이 주입하여 인접한 전극끼리 젤이 맞닿으면(Bridging) 두 채널의 신호가 같아지므로 주의해야 합니다.</li>
+    <li>사용 후 캡과 전극은 미지근한 물로 젤을 완전히 씻어내고 그늘에서 건조해야 수명이 유지됩니다.</li>
+</ul>`
             },
             {
                 id: 'biosemi-aib',
@@ -296,7 +333,19 @@
                 specs: { setup: 5, quality: 10, mobility: 2, price: 4, comfort: 10 },
                 manualUrl: 'https://www.biosemi.com/aib.htm',
                 features: ['Sensor Integration', 'Perfect Synchronization', 'Optical Isolation'],
-                fact: 'EEG와 외부 이벤트 트리거/센서 데이터를 밀리세컨드 단위로 동기화합니다.'
+                fact: 'EEG와 외부 이벤트 트리거/센서 데이터를 밀리세컨드 단위로 동기화합니다.',
+                manualSummary: `
+<h4 class="font-bold text-slate-800 mt-2 mb-1">🛠️ 기본 셋업 및 사용 방법</h4>
+<ul class="list-disc pl-5 mb-4 text-slate-600">
+    <li>Analog Input Box(AIB)를 메인 시스템인 ActiveTwo AD-box 데이지 체인 케이블에 연결합니다.</li>
+    <li>피부전도도(GSR), 심전도(ECG), 호흡 벨트 등 필요한 외부 아날로그 센서를 AIB의 포트에 연결합니다.</li>
+    <li>소프트웨어(ActiView)에서 AIB 채널이 활성화되었는지 확인하고 데이터를 기록합니다.</li>
+</ul>
+<h4 class="font-bold text-slate-800 mb-1">⚠️ 사용 시 주의사항</h4>
+<ul class="list-disc pl-5 text-slate-600">
+    <li>광학적 절연(Optical Isolation)을 유지하기 위해 승인되지 않은 전원 장치를 AIB나 센서에 직접 연결하지 마세요.</li>
+    <li>연결하는 센서의 전압 범위가 AIB의 허용 입력 범위를 초과하지 않도록 캘리브레이션을 확인해야 합니다.</li>
+</ul>`
             },
             {
                 id: 'fastrak',
@@ -307,9 +356,21 @@
                 channels: 0,
                 desc: '전자기장을 이용하여 3차원 공간상의 위치를 정밀하게 추적합니다. 주로 EEG 전극이 두피의 어느 위치에 부착되었는지 정확한 좌표를 따는(Digitizing) 용도로 사용됩니다 (Source Localization 연구 필수).',
                 specs: { setup: 4, quality: 9, mobility: 1, price: 3, comfort: 10 },
-                manualUrl: 'https://polhemus.com/scanning-digitizing/fastrak/',
+                manualUrl: 'https://polhemus.com/scanning-digitizing/digitizing-products/',
                 features: ['3D Position Tracking', 'High Accuracy', 'Electrode Localization'],
-                fact: 'MRI 데이터와 EEG 데이터를 정합(Co-registration)할 때 전극 위치 정보의 기준이 됩니다.'
+                fact: 'MRI 데이터와 EEG 데이터를 정합(Co-registration)할 때 전극 위치 정보의 기준이 됩니다.',
+                manualSummary: `
+<h4 class="font-bold text-slate-800 mt-2 mb-1">🛠️ 기본 셋업 및 사용 방법</h4>
+<ul class="list-disc pl-5 mb-4 text-slate-600">
+    <li>트랜스미터(전자기장 발생기)를 피험자의 머리 근처(주로 나무나 플라스틱 스탠드 위)에 고정합니다.</li>
+    <li>스타일러스(펜 형태의 포인터)를 사용하여 피험자 머리의 기준점(Nasion, Inion, 양쪽 귀 앞 등)을 먼저 찍어 영점을 잡습니다.</li>
+    <li>부착된 각 EEG 전극의 위치에 스타일러스를 대고 버튼을 눌러 3D 좌표 데이터를 차례대로 기록합니다.</li>
+</ul>
+<h4 class="font-bold text-slate-800 mb-1">⚠️ 사용 시 주의사항</h4>
+<ul class="list-disc pl-5 text-slate-600">
+    <li><strong>금속 주의:</strong> 전자기장을 사용하므로 트랜스미터 근처에 커다란 금속 물체(철제 책상, 휠체어 등)가 있으면 좌표가 심하게 왜곡됩니다. 반드시 목재/플라스틱 환경에서 사용하세요.</li>
+    <li>측정 도중 피험자가 머리를 움직이지 않도록 주의를 주거나 머리 고정 장치를 사용해야 정확도가 높아집니다.</li>
+</ul>`
             },
             {
                 id: 'qecg3',
@@ -320,9 +381,21 @@
                 channels: 3,
                 desc: '고품질의 건식(Dry) ECG(심전도) 센서로 추정됩니다. 보통 DSI 시스템과 결합하여 심박변이도(HRV)와 뇌파를 동시에 분석할 때 사용합니다. 옷 위에 착용 가능한 형태도 존재합니다.',
                 specs: { setup: 9, quality: 7, mobility: 9, price: 5, comfort: 8 },
-                manualUrl: '#',
+                manualUrl: 'https://www.laxtha.com/ProductView.asp?Model=LXC3203&catgrpid=3',
                 features: ['Dry Sensor', 'Through-clothing', 'ECG/HRV Analysis'],
-                fact: '전도성 젤 없이도 심전도를 측정할 수 있어 장기 모니터링에 유리합니다.'
+                fact: '전도성 젤 없이도 심전도를 측정할 수 있어 장기 모니터링에 유리합니다.',
+                manualSummary: `
+<h4 class="font-bold text-slate-800 mt-2 mb-1">🛠️ 기본 셋업 및 사용 방법</h4>
+<ul class="list-disc pl-5 mb-4 text-slate-600">
+    <li>가슴 밴드를 흉부에 두르고 센서 패드가 심장 부근의 피부에 밀착되도록 조정합니다.</li>
+    <li>일부 건식 센서의 경우, 극소량의 땀이나 수분이 있어야 초기 신호가 더 잘 잡힐 수 있습니다.</li>
+    <li>무선 송신기를 켜고 수신 기기(혹은 DSI 시스템)와 페어링하여 심전도 파형을 확인합니다.</li>
+</ul>
+<h4 class="font-bold text-slate-800 mb-1">⚠️ 사용 시 주의사항</h4>
+<ul class="list-disc pl-5 text-slate-600">
+    <li>밴드가 너무 헐거우면 피험자가 숨을 쉴 때마다 기저선(Baseline)이 흔들리는 노이즈가 발생합니다. 편안하면서도 밀착되게 조여야 합니다.</li>
+    <li>사용 후 센서 표면을 청결하게 유지하여 염분이나 이물질이 쌓이지 않도록 관리하세요.</li>
+</ul>`
             },
             {
                 id: 'weeg32',
@@ -333,9 +406,21 @@
                 channels: 32,
                 desc: 'Wireless EEG 32 Channel 시스템의 일반적 명칭이거나 특정 모델명입니다. 연구실 밖의 환경(Ecological validity)에서 뇌파를 측정하기 위해 설계된 이동형 고밀도 EEG입니다.',
                 specs: { setup: 7, quality: 8, mobility: 8, price: 3, comfort: 7 },
-                manualUrl: '#',
+                manualUrl: 'https://www.laxtha.com/ProductView.asp?Model=LXE3232-RF&catgrpid=1',
                 features: ['Wireless Transmission', 'Ambulatory', '32 Channels'],
-                fact: '유선 시스템의 제약 없이 피험자가 움직이는 상태에서의 인지 반응을 연구할 때 사용됩니다.'
+                fact: '유선 시스템의 제약 없이 피험자가 움직이는 상태에서의 인지 반응을 연구할 때 사용됩니다.',
+                manualSummary: `
+<h4 class="font-bold text-slate-800 mt-2 mb-1">🛠️ 기본 셋업 및 사용 방법</h4>
+<ul class="list-disc pl-5 mb-4 text-slate-600">
+    <li>(일반적인 무선 Wet 시스템의 경우) 피험자에게 캡을 씌우고 32개 채널에 전도성 젤을 주입해 임피던스를 낮춥니다.</li>
+    <li>무선 앰프를 캡 뒤통수 포켓이나 암밴드에 장착하고 전극 케이블을 연결합니다.</li>
+    <li>Wi-Fi 또는 전용 RF 수신기를 컴퓨터에 꽂고 소프트웨어 연동을 확인합니다.</li>
+</ul>
+<h4 class="font-bold text-slate-800 mb-1">⚠️ 사용 시 주의사항</h4>
+<ul class="list-disc pl-5 text-slate-600">
+    <li>피험자가 수신기(PC)로부터 허용된 무선 통신 반경을 벗어나지 않도록 주의해야 합니다. 데이터 손실이 발생할 수 있습니다.</li>
+    <li>실험 전 무선 앰프의 배터리가 32채널 데이터를 장시간 전송하기에 충분히 충전되었는지 확인하세요.</li>
+</ul>`
             },
             {
                 id: 'openbci',
@@ -348,7 +433,19 @@
                 specs: { setup: 4, quality: 7, mobility: 7, price: 8, comfort: 5 }, // High price score implies LOW cost
                 manualUrl: 'https://docs.openbci.com/',
                 features: ['Open Source', 'Modular', 'Arduino Compatible', 'Active Community'],
-                fact: '가장 저렴한 비용으로 16채널까지 확장 가능한 연구용급 데이터를 얻을 수 있는 방법입니다.'
+                fact: '가장 저렴한 비용으로 16채널까지 확장 가능한 연구용급 데이터를 얻을 수 있는 방법입니다.',
+                manualSummary: `
+<h4 class="font-bold text-slate-800 mt-2 mb-1">🛠️ 기본 셋업 및 사용 방법</h4>
+<ul class="list-disc pl-5 mb-4 text-slate-600">
+    <li>보드에 리포(LiPo) 배터리를 연결하거나 AA 배터리 팩을 연결하여 전원을 공급합니다.</li>
+    <li>측정하고자 하는 위치의 전극 선을 보드의 아날로그 핀에 맞게 꽂아줍니다. (Reference와 Ground 핀 연결 필수)</li>
+    <li>PC에 USB 동글을 꽂고 OpenBCI GUI 소프트웨어를 실행하여 데이터 스트리밍을 시작합니다.</li>
+</ul>
+<h4 class="font-bold text-slate-800 mb-1">⚠️ 사용 시 주의사항</h4>
+<ul class="list-disc pl-5 text-slate-600">
+    <li>회로 기판이 그대로 노출되어 있으므로 정전기에 매우 취약합니다. 취급 시 주의하고 케이스를 씌우는 것을 권장합니다.</li>
+    <li>전선이 엉키거나 보드 핀에서 헐거워지면 노이즈가 심하게 발생하므로 단자 연결 상태를 자주 점검하세요.</li>
+</ul>`
             },
             {
                 id: 'emotiv',
@@ -361,20 +458,44 @@
                 specs: { setup: 7, quality: 6, mobility: 8, price: 7, comfort: 6 },
                 manualUrl: 'https://www.emotiv.com/epoc-x/',
                 features: ['Saline Sensors', 'Bluetooth', 'Emotion Detection API', 'Sleek Design'],
-                fact: '초기 셋업 시 센서의 습도를 맞추는 것이 신호 품질에 결정적입니다.'
+                fact: '초기 셋업 시 센서의 습도를 맞추는 것이 신호 품질에 결정적입니다.',
+                manualSummary: `
+<h4 class="font-bold text-slate-800 mt-2 mb-1">🛠️ 기본 셋업 및 사용 방법</h4>
+<ul class="list-disc pl-5 mb-4 text-slate-600">
+    <li>헤드셋에 달린 각 센서 펠트(스펀지)에 렌즈 세척용 식염수를 충분히 적십니다.</li>
+    <li>헤드셋을 머리에 쓰고 귀 뒤쪽(Reference 전극)과 두피에 펠트가 잘 밀착되도록 조정합니다.</li>
+    <li>EmotivPRO 앱을 통해 블루투스로 연결하고 각 센서의 연결 상태(초록색 불빛)를 확인합니다.</li>
+</ul>
+<h4 class="font-bold text-slate-800 mb-1">⚠️ 사용 시 주의사항</h4>
+<ul class="list-disc pl-5 text-slate-600">
+    <li>식염수는 시간이 지나면 마르기 때문에 장시간(1시간 이상) 실험 시 중간에 식염수를 보충해야 신호 끊김을 막을 수 있습니다.</li>
+    <li>기기를 너무 벌려서 착용하면 플라스틱 암(Arm)이 파손될 수 있으므로 머리 위에서 부드럽게 내려쓰세요.</li>
+</ul>`
             },
             {
                 id: 'muse',
-                name: 'Muse 2 / S',
+                name: 'Muse 2',
                 manufacturer: 'Interaxon',
                 type: 'EEG (Meditation)',
                 category: 'eeg',
                 channels: 4,
                 desc: '명상 보조 기기로 유명합니다. 이마와 귀 뒤에 건식 센서가 위치하며 셋업이 1분 미만입니다. 채널 수가 적지만(4ch), 명상 상태나 집중도 모니터링에는 매우 효과적입니다.',
                 specs: { setup: 10, quality: 5, mobility: 10, price: 9, comfort: 9 },
-                manualUrl: 'https://choosemuse.com/pages/user-guides',
+                manualUrl: 'https://choosemuse.com/blogs/news/muse-2-starter-guide',
                 features: ['Very Easy Setup', 'Biofeedback App', 'Portable', 'Dry Sensors'],
-                fact: 'Raw 데이터 접근을 위해서는 별도의 서드파티 앱(Mind Monitor 등)이 필요할 수 있습니다.'
+                fact: 'Raw 데이터 접근을 위해서는 별도의 서드파티 앱(Mind Monitor 등)이 필요할 수 있습니다.',
+                manualSummary: `
+<h4 class="font-bold text-slate-800 mt-2 mb-1">🛠️ 기본 셋업 및 사용 방법</h4>
+<ul class="list-disc pl-5 mb-4 text-slate-600">
+    <li>피험자의 이마와 귀 뒤쪽 피부를 물티슈나 알코올 스왑으로 가볍게 닦아 유분기를 제거합니다.</li>
+    <li>헤드밴드처럼 기기를 이마에 밀착시키고, 양쪽 고무 이어피스가 귀 뒤쪽에 잘 닿도록 안경 쓰듯 착용합니다.</li>
+    <li>전용 앱이나 Mind Monitor 앱을 블루투스로 연결하여 신호가 안정될 때까지 약 30초간 기다립니다.</li>
+</ul>
+<h4 class="font-bold text-slate-800 mb-1">⚠️ 사용 시 주의사항</h4>
+<ul class="list-disc pl-5 text-slate-600">
+    <li>건식 센서이므로 눈 깜박임이나 이마 근육의 움직임(찡그림 등)에 노이즈가 매우 크게 반응합니다. 측정 중에는 안면 근육을 이완해야 합니다.</li>
+    <li>센서 밴드 부위의 금속 코팅이 벗겨지지 않도록 부드러운 천으로 닦아 관리하세요.</li>
+</ul>`
             },
             {
                 id: 'focus',
@@ -387,9 +508,44 @@
                 specs: { setup: 8, quality: 5, mobility: 9, price: 8, comfort: 6 },
                 manualUrl: 'https://foc.us/',
                 features: ['tDCS', 'Gaming Focus', 'Simple Interface'],
-                fact: '주의: 뇌 자극 장비는 사용법을 정확히 숙지하고 안전 가이드라인을 따라야 합니다.'
+                fact: '주의: 뇌 자극 장비는 사용법을 정확히 숙지하고 안전 가이드라인을 따라야 합니다.',
+                manualSummary: `
+<h4 class="font-bold text-slate-800 mt-2 mb-1">🛠️ 기본 셋업 및 사용 방법</h4>
+<ul class="list-disc pl-5 mb-4 text-slate-600">
+    <li>동봉된 스펀지에 식염수(또는 수돗물)를 촉촉하게 적십니다.</li>
+    <li>헤드밴드나 캡을 이용하여 타겟 부위(예: 이마 위 전전두엽)에 양극(+)과 음극(-) 스펀지를 밀착시킵니다.</li>
+    <li>기기를 켜고 보통 1~2mA 사이의 미세 전류로 15~20분간 자극을 시작합니다.</li>
+</ul>
+<h4 class="font-bold text-slate-800 mb-1">⚠️ 사용 시 주의사항</h4>
+<ul class="list-disc pl-5 text-slate-600">
+    <li><strong>안전 경고:</strong> 하루 권장 사용 시간(보통 20~30분)과 전류 강도(최대 2mA)를 절대로 초과하지 마세요.</li>
+    <li>피부에 상처가 있는 부위에 스펀지를 대지 마세요. 찌릿한 느낌을 넘어선 화끈거림이나 통증이 느껴지면 즉시 기기를 끄고 벗어야 합니다.</li>
+</ul>`
             }
         ];
+
+        // ---------------------------------------------------------
+        // [로컬 이미지 하드코딩 설정]
+        // 사용자가 직접 다운로드한 이미지를 사용하도록 경로를 지정했습니다.
+        // 'images' 폴더를 만들고 아래 파일명과 확장자(.jpg 또는 .png)에 맞게 사진을 넣어주세요.
+        // ---------------------------------------------------------
+        const deviceImages = {
+            'dsi24': './images/dsi24.jpg',
+            'starstim8': './images/starstim8.jpg',
+            'biosemi': './images/biosemi.jpg',
+            'biosemi-aib': './images/biosemi-aib.jpg',
+            'fastrak': './images/fastrak.jpg',
+            'qecg3': './images/qecg3.jpg',
+            'weeg32': './images/weeg32.jpg',
+            'openbci': './images/openbci.jpg',
+            'emotiv': './images/emotiv.jpg',
+            'muse': './images/muse.jpg',
+            'focus': './images/focus.jpg'
+        };
+        
+        devices.forEach(d => {
+            d.imgUrl = deviceImages[d.id] || './images/default.jpg';
+        });
 
         // State
         let currentDeviceId = 'dsi24';
@@ -481,6 +637,21 @@
                     </div>
                     <p class="text-lg text-blue-600 font-medium mb-6">${device.type} ${device.channels > 0 ? `• ${device.channels} Channels` : ''}</p>
                     
+                    <!-- Added Device Image with Local Fallback UI -->
+                    <div class="mb-6 rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-white flex items-center justify-center min-h-[250px] relative">
+                        <img src="${device.imgUrl}" alt="${device.name} 장비 사진" class="w-full h-auto max-h-[350px] object-contain p-4" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+                        
+                        <!-- 로컬 이미지가 없을 때 보여질 안내 UI -->
+                        <div class="hidden absolute inset-0 bg-slate-50 flex flex-col items-center justify-center text-slate-400 w-full h-full p-6 text-center border-2 border-dashed border-slate-300 m-2 rounded-lg">
+                            <i class="fa-solid fa-folder-open text-4xl mb-3 text-slate-300"></i>
+                            <span class="text-sm font-bold text-slate-600 mb-1">로컬 이미지를 찾을 수 없습니다</span>
+                            <span class="text-xs text-slate-500">
+                                컴퓨터에 <strong>images</strong> 폴더를 만들고,<br>
+                                <code class="bg-slate-200 px-1 py-0.5 rounded text-pink-600">${device.imgUrl.replace('./images/', '')}</code> 이름으로 사진을 저장해주세요.
+                            </span>
+                        </div>
+                    </div>
+
                     <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm mb-8">
                         <h3 class="font-bold text-slate-800 mb-3 border-b border-slate-100 pb-2">기기 개요</h3>
                         <p class="text-slate-600 leading-relaxed mb-4">${device.desc}</p>
@@ -492,11 +663,22 @@
 
                         <div class="flex flex-wrap gap-3">
                             <a href="${device.manualUrl}" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold rounded-lg transition shadow-sm hover:shadow-md">
-                                <i class="fa-solid fa-book-open"></i> 매뉴얼 / 공식 사이트
+                                <i class="fa-solid fa-book-open"></i> 공식 사이트 / 매뉴얼
                             </a>
                             <button onclick="document.getElementById('comparison').scrollIntoView({behavior: 'smooth'})" class="inline-flex items-center gap-2 px-5 py-2.5 bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 text-sm font-bold rounded-lg transition">
                                 <i class="fa-solid fa-chart-bar"></i> 다른 기기와 비교
                             </button>
+                        </div>
+
+                        <!-- Static Manual Summary Section -->
+                        <div class="mt-8 border-t border-slate-200 pt-6">
+                            <div class="flex items-center gap-2 mb-4">
+                                <i class="fa-solid fa-book-bookmark text-emerald-500 text-lg"></i>
+                                <h3 class="font-bold text-slate-800">퀵 매뉴얼 요약 (사용법 및 주의사항)</h3>
+                            </div>
+                            <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 text-sm leading-relaxed shadow-inner">
+                                ${device.manualSummary}
+                            </div>
                         </div>
                     </div>
                 </div>
